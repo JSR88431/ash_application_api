@@ -12,6 +12,6 @@ headers = {
                   'Chrome/133.0.0.0 Safari/537.36'
 }
 
-response = requests.post(url, json=data)
+response = requests.post(url, json=data, headers=headers)
 
 print('Status Code:', response.status_code)
